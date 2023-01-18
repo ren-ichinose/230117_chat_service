@@ -10,7 +10,11 @@
   "repository": "git@github.com:ren-ichinose/230117_chat_service.git",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "http-auth": "4.1.9",
-    "pug": "3.0.2"
+    "pg": "8.5.1",
+    "pg-hstore": "2.3.3",
+    "pug": "3.0.2",
+    "sequelize": "6.5.0"
   }
 }

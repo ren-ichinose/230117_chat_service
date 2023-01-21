@@ -10,6 +10,7 @@ html(lang="ja")
     form(method="post" action="/posts")
       div
         textarea(name="content" cols=40 rows=4)
+        input(type="hidden" name="oneTimeToken" value=oneTimeToken)
       div
         button(type="submit") 送信
     h2 投稿一覧
@@ -21,5 +22,6 @@ html(lang="ja")
       if isDeletable
         form(method="post" action="/posts/delete")
           input(type="hidden" name="id" value=post.id)
+          input(type="hidden" name="oneTimeToken" value=oneTimeToken)
           button(type="submit") 削除
     hr

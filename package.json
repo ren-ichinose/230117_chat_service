@@ -10,6 +10,7 @@
   "repository": "git@github.com:ren-ichinose/230117_chat_service.git",
   "license": "MIT",
   "dependencies": {
+    "dayjs": "1.10.4",
     "dotenv": "^16.0.3",
     "http-auth": "4.1.9",
     "pg": "8.5.1",

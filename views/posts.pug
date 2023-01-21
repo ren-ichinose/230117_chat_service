@@ -16,7 +16,7 @@ html(lang="ja")
     each post in posts
       p #{post.postedBy}
       p #{post.formattedCreatedAt}
-      p!=post.content
+      p(style="white-space:pre; overflow:auto;") #{post.content}
       - let isDeletable = (user === post.postedBy || user === 'admin')
       if isDeletable
         form(method="post" action="/posts/delete")
